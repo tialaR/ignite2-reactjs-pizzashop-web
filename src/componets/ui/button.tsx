@@ -22,6 +22,7 @@ const buttonVariants = cva(
       size: {
         default: 'noh-10 nopx-4 nopy-2',
         sm: 'noh-9 norounded-md nopx-3',
+        xs: 'h-8 px-2.5',
         lg: 'noh-11 norounded-md nopx-8',
         icon: 'noh-10 now-10',
       },
