@@ -1,0 +1,22 @@
+TOOLS USED ON THIS PROJECT
+
+=> shadcn (designed components that you can copy and paste into your apps. Accessible. Customizable)
+https://ui.shadcn.com/docs/dark-mode/vite
+
+=> tailwindcss (needs to be installed because shadcn uses tailwindcss under the hood)
+=> https://tailwindcss.com/
+
+=> tailwindlabs/prettier-plugin-tailwindcss (tailwindcss configuration with prettier)
+https://github.com/tailwindlabs/prettier-plugin-tailwindcss
+
+=> eslint-plugin-simple-import-sort (organizes imports)
+https://github.com/lydell/eslint-plugin-simple-import-sort
+
+=> react-helmet-async (put title 'head' on pages)
+https://github.com/staylor/react-helmet-async
+
+=> Sonner (toast component)
+https://github.com/emilkowalski/sonner
+
+=> Lucide React (Icons)
+https://github.com/lucide-icons/lucide
