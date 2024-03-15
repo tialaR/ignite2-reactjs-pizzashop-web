@@ -1,5 +1,3 @@
-import '@/globals.css'
-
 import { Pizza } from 'lucide-react'
 import { Outlet } from 'react-router-dom'
 
