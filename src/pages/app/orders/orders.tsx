@@ -1,16 +1,15 @@
-import { ArrowRight, Search, X } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 
-import { Button } from '@/componets/ui/button'
-import { Input } from '@/componets/ui/input'
 import {
   Table,
   TableBody,
-  TableCell,
   TableHead,
   TableHeader,
   TableRow,
 } from '@/componets/ui/table'
+
+import { OrderTableFilters } from './order-table-filters'
+import { OrderTableRow } from './order-table-row'
 
 export function Orders() {
   return (
@@ -24,10 +23,7 @@ export function Orders() {
       {/* container com filtro e tabela */}
       <div className="space-y-2.5">
         {/* filtros da tabela */}
-        <form className="flex items-center gap-2">
-          <span className="text-sm font-semibold">Filtros:</span>
-          <Input placeholder="Nome do cliente" className="h-8 w-[320px]" />
-        </form>
+        <OrderTableFilters />
 
         {/* tabela */}
         <div className="rounded-md border">
@@ -52,55 +48,7 @@ export function Orders() {
 
             <TableBody>
               {Array.from({ length: 10 }).map((_, i) => {
-                return (
-                  <TableRow key={i}>
-                    <TableCell>
-                      <Button variant="outline" size="xs">
-                        <Search className="h-3 w-3" />
-                        <span className="sr-only">Detalhes do pedido</span>
-                      </Button>
-                    </TableCell>
-
-                    <TableCell className="font-mono text-xs font-medium">
-                      821e78f7asdhdf128h
-                    </TableCell>
-
-                    <TableCell className="text-muted-foreground">
-                      há 15 minutos
-                    </TableCell>
-
-                    <TableCell>
-                      <div className="flex items-center gap-2">
-                        <span className="h-2 w-2 rounded-full bg-slate-400" />
-                        <span className="font-medium text-muted-foreground">
-                          Pendente
-                        </span>
-                      </div>
-                    </TableCell>
-
-                    <TableCell className="font-medium">
-                      Tiala Fernanda de Santana Rocha
-                    </TableCell>
-
-                    <TableCell className="font-medium">R$ 149,90</TableCell>
-
-                    {/* O nome desse botao vai mudar de acordo com o status do pedido
-                    ex: Aprovar, Entregar, etc */}
-                    <TableCell>
-                      <Button variant="outline" size="xs">
-                        <ArrowRight className="mr-2 h-3 w-3" />
-                        Aprovar
-                      </Button>
-                    </TableCell>
-
-                    <TableCell>
-                      <Button variant="ghost" size="xs">
-                        <X className="mr-2 h-3 w-3" />
-                        Cancelar
-                      </Button>
-                    </TableCell>
-                  </TableRow>
-                )
+                return <OrderTableRow key={i} />
               })}
             </TableBody>
           </Table>
