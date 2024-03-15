@@ -67,6 +67,11 @@ export function RevenueChart() {
               }
             />
 
+            <CartesianGrid
+              vertical={false} // Estiliza o grafico colocando linhas guias verticais
+              className="stroke-muted" // Muda a cor das linhas
+            />
+
             {/* Definindo layout do grafico linear */}
             {/* Linha do grafico que define o up e doown da receita (revenue) */}
             <Line
