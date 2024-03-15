@@ -1,4 +1,4 @@
-import './global.css'
+import './globals.css'
 
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 import { RouterProvider } from 'react-router-dom'
