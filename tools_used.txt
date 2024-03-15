@@ -20,3 +20,6 @@ https://github.com/emilkowalski/sonner
 
 => Lucide React (Icons)
 https://github.com/lucide-icons/lucide
+
+=> Recharts (graphics)
+https://recharts.org/en-US/
